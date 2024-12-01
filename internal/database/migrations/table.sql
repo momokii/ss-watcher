@@ -1,0 +1,13 @@
+CREATE TABLE IF NOT EXISTS records (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    item_id TEXT NOT NULL,
+    name TEXT NOT NULL,
+    folder_id TEXT NOT NULL,
+    date DATE NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS user_permission (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    permission_id TEXT NOT NULL,
+    email TEXT NOT NULL,
+)
